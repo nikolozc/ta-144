@@ -22,17 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.btnThread = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnThread
+        '
+        Me.btnThread.Location = New System.Drawing.Point(21, 49)
+        Me.btnThread.Name = "btnThread"
+        Me.btnThread.Size = New System.Drawing.Size(118, 34)
+        Me.btnThread.TabIndex = 0
+        Me.btnThread.Text = "Start New Thread"
+        Me.btnThread.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(342, 285)
+        Me.ClientSize = New System.Drawing.Size(163, 129)
+        Me.Controls.Add(Me.btnThread)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents btnThread As Button
 End Class
